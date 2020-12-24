@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de citation - Etape 2 - VanillaJS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body class="vanilla-bg">
+    <!-- Navbar -->
+    <div class="navbar navbar__background--vanilla">
+        <div class="container">
+            <div class="navbar__inner flex">
+                <h1 class="vanilla-color"> Générateur de Citations VanillaJS</h1>
+            <nav>
+                <ul>
+                    <li class="navbar__link--vue"><a href="http://ocr-p5-vuejs.folio-jmg.fr/">VueJS</a></li>
+                    <li class="navbar__link--react"><a href="http://ocr-p5-react.folio-jmg.fr/">React</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </div>
+    
+        <section>
+            <div class="container flex"> 
+                <form name="form">
+                    <div class="card">
+                        <h2 class="uppercase">Type de citations :</h2>
+                        <div class="flex">
+                            <label for="type1">
+                                <input type="radio" name="categorie" value="generator1" id="type1" checked>
+                                <span>philosophie</span>
+                            </label>
+                            <label for="type2">
+                                <input type="radio" name="categorie" value="generator2" id="type2" checked>
+                                <span>classique</span>
+                            </label>
+                        </div>
+                        
+                        <h2 class="uppercase">Nombre de citations :</h2>
+                        <div class="flex">
+                            <label for="1">
+                                <input type="radio" name="nbCitations" value="1" id="1" checked>
+                                <span>1</span>
+                            </label>
+                            <label for="2">
+                                <input type="radio" name="nbCitations" value="2" id="2" checked>
+                                <span>2</span>
+                            </label>
+                            <label for="3">
+                                <input type="radio" name="nbCitations" value="3" id="3" checked>
+                                <span>3</span>
+                            </label>
+                            <label for="4">
+                                <input type="radio" name="nbCitations" value="4" id="4" checked>
+                                <span>4</span>
+                            </label>
+                            <label for="5">
+                                <input type="radio" name="nbCitations" value="5" id="5" checked>
+                                <span>5</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="buttonBox buttonBox__vanilla">
+                        <button id="generate">
+                            Générer
+                        </button>
+                    </div>
+                    <div class="playCitation" id="playCitation"></div>
+                    <div class="genreCitation" id="genreCitation"></div>
+                </form>
+            </div>
+            <div class="framework animate__animated animate__pulse">
+                <p>JS</p>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="flex-center">
+                <p>JMG 2020 - Générateur de citations v.2 VanillaJS -</p>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="app.js"></script>
+    </body>
+    </html>
+    
