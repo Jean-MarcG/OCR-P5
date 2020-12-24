@@ -105,23 +105,23 @@ const App = () => {
                         <h2 className="uppercase">Nombre de citations :</h2>
                             <div className="flex">
                     <label htmlFor="1">
-                        <input type="radio" name="nbitations" value="1" id="1" checked></input>
+                        <input type="radio" name="nbitations" value="1" id="1" checked onClick={() => setNbCitations(1)}></input>
                         <span>1</span>
                     </label>
                     <label htmlFor="2">
-                        <input type="radio" name="nbitations" value="2" id="2" checked></input>
+                        <input type="radio" name="nbitations" value="2" id="2" checked onClick={() => setNbCitations(2)}></input>
                         <span>2</span>
                     </label>                    
                     <label htmlFor="3">
-                        <input type="radio" name="nbitations" value="3" id="3" checked></input>
+                        <input type="radio" name="nbitations" value="3" id="3" checked onClick={() => setNbCitations(3)}></input>
                         <span>3</span>
                     </label>                    
-                    <label htmlFor="4">
-                        <input type="radio" name="nbitations" value="4" id="4" checked></input>
+                    <label htmlFor="4"> 
+                        <input type="radio" name="nbitations" value="4" id="4" checked onClick={() => setNbCitations(4)}></input>
                         <span>4</span>
                     </label>                    
                     <label htmlFor="5">
-                        <input type="radio" name="nbitations" value="5" id="5" checked></input>
+                        <input type="radio" name="nbitations" value="5" id="5" checked onClick={() => setNbCitations(5)}></input>
                         <span>5</span>
                     </label>
 
