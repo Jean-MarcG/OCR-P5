@@ -4,6 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JimDev <jim2212.dev@gmail.com>",
@@ -11,5 +13,8 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "scss": "git+https://github.com/Jean-MarcG/scss_p5.git"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }

@@ -10,8 +10,8 @@ const Navbar = () => {
                         <h1 className="react-color"> Générateur de Citations React</h1>
                         <nav>
                             <ul>
-                                <li className="navbar__link--vanilla"><a href="http://ocr-p5-vanillajs.folio-jmg.fr/">VanillaJS</a></li>
-                                <li className="navbar__link--vuejs"><a href="http://ocr-p5-vuejs.folio-jmg.fr/">Vuejs</a></li>
+                                <li className="navbar__link--vanilla"><a href="https://ocr-p5-vanillajs.folio-jmg.fr/">VanillaJS</a></li>
+                                <li className="navbar__link--vuejs"><a href="https://ocr-p5-vuejs.folio-jmg.fr/">Vuejs</a></li>
                             </ul>
                         </nav>
                     </div>

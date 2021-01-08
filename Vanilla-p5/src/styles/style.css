@@ -47,7 +47,7 @@ footer p {
 
 .navbar {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: #efefef;
   height: 110px;
 }
@@ -61,6 +61,7 @@ footer p {
 
 .navbar a {
   font-size: 1rem;
+  font-weight: 600;
   color: #efefef;
   padding: 10px;
   margin: 0 10px;
@@ -83,6 +84,10 @@ footer p {
   background: black;
 }
 
+.navbar.navbar__background--react {
+  background: #282c34;
+}
+
 @media screen and (max-width: 550px) {
   .navbar {
     height: 100px;
@@ -101,7 +106,26 @@ footer p {
   margin: 1rem auto;
 }
 
-/***** VuesJS project *****/
+.navbar__link--vanilla a:hover {
+  color: #f0d91c;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: #f0d91c;
+  border-bottom: 2px #f0d91c solid;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.navbar__link--vuejs a:hover {
+  color: #3FB37F;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  color: #3FB37F;
+  border-bottom: 2px #3FB37F solid;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
 button {
   display: inline-block;
   cursor: pointer;
@@ -236,6 +260,10 @@ h1 {
   line-height: 1.2;
 }
 
+h1.react-color {
+  color: #5ED4F4;
+}
+
 @media screen and (max-width: 415px) {
   h1 {
     font-size: .8em;
@@ -297,9 +325,25 @@ p {
   transition: .2s ease-in-out;
 }
 
+.react--logo {
+  width: 50%;
+  height: auto;
+}
+
 @media screen and (min-width: 758px) {
   .framework {
     bottom: 3rem;
+    right: 2rem;
+  }
+  .framework p {
+    font-size: 10rem;
+    -webkit-text-stroke: 0.2rem #111111;
+  }
+}
+
+@media screen and (max-width: 758px) {
+  .framework {
+    bottom: 4rem;
     right: 2rem;
   }
   .framework p {

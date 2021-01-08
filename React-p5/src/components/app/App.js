@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar';
 import {getRandomPart} from "../../utils";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
+import img from '../../img/react-logo.png';
 import "./App.scss"
 
 const MySwal = withReactContent(Swal)
@@ -27,6 +28,14 @@ const Citations = ({ citations }) => {
         {citations.map(c => <li key={c.id}>{c.value}</li>)}
     </ul>
 
+} 
+
+const Framework = () => {
+    return (
+        <div className="framework--react">
+            <img className="react--logo" src={img} alt=""/>
+        </div>
+    )
 }
 
  
@@ -135,6 +144,7 @@ const App = () => {
                 citations={citations}
             />
             </div>
+            <Framework />
             <Footer2 />
 
         </div>
